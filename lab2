@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+</head>
+ <body>
+
+
+</body>
+</html>
+
+
+
+
+
+<SCRIPT SRC="jsMath/plugins/noImageFonts.js"> </SCRIPT>
+
+<SCRIPT SRC="jsMath/jsMath.js"> </SCRIPT>
+
+
+
+
+<DIV CLASS="math">
+u(t,x)=\sum_{k=1}^{\infty }(A_{k}cos\frac{k \ddot{\iota}at}{l}+B_{k}sin\frac{k \ddot{\iota}at}{l})sin\frac{k \ddot{\iota}x}{l}
+
+
+</DIV>
+<DIV CLASS="math">
+\varphi (x)=\sum_{k=1}^{\infty }A_{k}sin\frac{k \ddot{\iota}x}{l},x\epsilon [0,l]
+<DIV>
+<script type="text/javascript"> 
+   jsMath.Process(document);
+</script>
+
+
+
+
+
+ <script type="text/javascript"> 
+
+   
+   function mathem()
+{
+   var sssr = '<span CLASS="math"> x \\times y \\cdot z \\quad</span>';
+   document.getElementById("formula").innerHTML = sssr;
+    jsMath.Process(document);
+}
+
+ 
+</script>
+
+
+
+
+	
