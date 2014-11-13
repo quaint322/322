@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="windows-1251" />
+ 
+<title>Вариант 23</title>
+<meta name=description content=' '><meta name=keywords content=' '><meta http-equiv='content-type' content='text/html; charset=windows-1251' />
+<meta http-equiv='content-style-type' content='text/css' />
+ 
+<meta http-equiv='content-language' content='ru' /
+        <link rel="stylesheet" type="text/css" href="style.css" />
+ 
+ 
+<style type="text/css">
+ 
+.selected {
+    background-color: #906090;
+}
+ 
+table {
+    background-color: beige;
+    border-collapse: collapse;
+}
+ 
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 6px;
+}
+ 
+</style>
+ 
+<script type="text/javascript">
+ 
+function getRandom(min,max){
+    return Math.floor(Math.random()*(max-min+1))+min;
+}
+ 
+function showTable(count_rows, count_cols) {
+    var htmlcode = '';
+    ROWS_SIZE = count_rows;
+    COLS_SIZE = count_cols;
+    for (var rows = 0; rows < count_rows; rows++) {
+        htmlcode += '<tr>\n';
+        for (var cols = 0; cols < count_cols; cols++) {
+            htmlcode += '<td id="td' + rows + cols + '">' + getRandom(-20,20) + '</td>'
+        }
+        htmlcode += '</tr>\n';
+    }
+    document.getElementById("main_table").innerHTML = htmlcode;
+}
+ 
+function toMark() {                      
+    for (var rows = 0; rows < ROWS_SIZE; rows++) {
+        for (var cols = 0; cols < COLS_SIZE; cols++) {
+            if (checkWord(document.getElementById("main_table").rows[rows].cells[cols].innerHTML)) {
+                var elem = document.getElementById("td" + rows + cols);
+                elem.setAttribute("class","selected");
+            }
+        }
+    }
+}
+ 
+function checkWord(word) {
+    if ((word*word) > 111) {
+         return true;
+            } else {
+        return false; 
+    }
+}
+</script>
+</head>
+<body onload="showTable(10,10)">
+<div align="center">
+    <table id="main_table">
+    </table>
+    <p>
+    <input type="button" value="Выделить" onclick="toMark()">
+    <input type="button" value="Генерировать" onclick="showTable(10,10)">
+</div>
+</body>
+</html>
