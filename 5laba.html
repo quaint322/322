@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+
+  <canvas id="smile" width="1048" height="720">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+    var cxt = myCanvas.getContext('2d');
+
+cxt.moveTo(150,150); 
+cxt.lineTo(100,350);
+cxt.lineTo(200,350);
+cxt.lineTo(150,150);
+cxt.stroke();
+cxt.moveTo(140,140); 
+cxt.lineTo(100,200);
+cxt.stroke();
+cxt.moveTo(160,140); 
+cxt.lineTo(200,200);
+cxt.stroke();
+  cxt.scale(2, 1); 
+    cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#fff";
+     cxt.beginPath();
+     cxt.arc(75,125,25,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+
+     cxt.lineWidth = 1; 
+     cxt.strokeStyle = 'black';
+     cxt.strokeRect(150,150,40,200);
+cxt.moveTo(150,250); 
+cxt.lineTo(190,250);
+cxt.stroke();
+cxt.moveTo(165,250); 
+cxt.lineTo(165,350);
+cxt.stroke();
+    cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#fff";
+     cxt.beginPath();
+     cxt.arc(170,125,25,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+cxt.moveTo(150,150); 
+cxt.lineTo(130,180);
+cxt.stroke();
+cxt.moveTo(190,150); 
+cxt.lineTo(210,180);
+cxt.stroke();
+
+
+cxt.moveTo(250,200); 
+cxt.lineTo(225,350);
+cxt.lineTo(275,350);
+cxt.lineTo(250,200);
+cxt.stroke();
+cxt.moveTo(250,190); 
+cxt.lineTo(230,230);
+cxt.stroke();
+cxt.moveTo(250,190); 
+cxt.lineTo(270,230);
+cxt.stroke();
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#fff";
+     cxt.beginPath();
+     cxt.arc(250,180,20,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+
+     cxt.lineWidth = 1; 
+     cxt.strokeStyle = 'black';
+     cxt.strokeRect(300,200,30,150);
+cxt.moveTo(300,270); 
+cxt.lineTo(330,270);
+cxt.stroke();
+cxt.moveTo(310,270); 
+cxt.lineTo(310,350);
+cxt.stroke();
+    cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#fff";
+     cxt.beginPath();
+     cxt.arc(315,180,20,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+cxt.moveTo(300,200); 
+cxt.lineTo(280,220);
+cxt.stroke();
+cxt.moveTo(330,200); 
+cxt.lineTo(350,220);
+cxt.stroke();
+
+  </script>
+ </head>
+ <body>
+</html>
